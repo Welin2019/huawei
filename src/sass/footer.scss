@@ -1,0 +1,238 @@
+//底部第三部分
+@mixin footer_three_line {
+    &::after{
+        content: "";
+        width: 1px;
+        height: 13px;
+        background: #d3d3d3;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        margin: 0 6px;
+    }
+}
+
+footer{
+    width: 100%;
+    background-color: #F9F9F9;
+    .footer_one{
+        width: 1200px;
+        margin: 0 auto;
+        height: 40px;
+        padding: 22px 0 20px;
+        ul{
+            display: flex;
+            li{
+                padding-right: 120px;
+                cursor: pointer;
+                font-size: 18px;
+                color: #333333;
+                height: 40px;
+                text-align: center;
+                vertical-align: middle;
+                i{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 15px;
+                    background: url(https://res8.vmallres.com/20181205/images/echannel/icon/icon-header.png?20170620) no-repeat;
+                    background-position: -358px -207px;
+                }
+                &:nth-child(4){
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .footer_two{
+        width: 1200px;
+        margin: 0 auto;
+        height: 162px;
+        border-top: 1px solid #E5E5E5;
+        border-bottom: 1px solid #E5E5E5;
+        padding: 23px 0 24px;
+        .footer_two_l{
+            width: 920px;
+            height: 155px;
+            padding-top: 5px;
+            border-right: 1px solid #e5e5e5;
+            float: left;
+            > aside{
+                display: flex;
+                > ul{
+                    width: 16.66667%;
+                    p{
+                        font-size: 14px;
+                        padding-bottom: 7px;
+                        color: #333;
+                        display: block;
+                        border-left: none;
+                        padding-left: 0;
+                        line-height: 1.5;
+                    }
+                    li{
+                        line-height: 22px;
+                        color: #777777;
+                        font-size: 12px;
+                        cursor: pointer;
+                        &:hover{
+                            color: #CA141D;
+                        }
+                    }
+                }
+            }
+        }
+        .footer_two_r{
+            width: 279px;
+            margin-top: 2px;
+            text-align: center;
+            float: right;
+            > h3{
+                font-size: 24px;
+                color: #3A3A3A;
+            }
+            >h4{
+                line-height: 22px;
+                color: #333;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            >h5{
+                width: 170px;
+                height: 34px;
+                margin: 0 auto;
+                margin-top: 10px;
+                font-size: 14px;
+                line-height: 34px;
+                background: #333;
+                cursor: pointer;
+                border-radius: 17px;
+                border: 1px solid #333;
+                color: #fff;
+                i{
+                    display: inline-block;
+                    height: 20px;
+                    width: 20px;
+                    margin-right: 6px;
+                    position: relative;
+                    top: -1px;
+                    vertical-align: middle;
+                    background: url(https://res8.vmallres.com/shopdc/cdn/modules/footer/pc/img/22.png) no-repeat;
+                    background-size: 96%;
+                }
+            }
+            aside{
+                margin-top: 26px;
+                margin-left: 40px;
+                width: 250px;
+                >h6{
+                    float: left;
+                    margin-left: 3px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #333333;
+                    text-align: left;
+                }
+                >ul{
+                    li{
+                        float: left;
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 11px;
+                        cursor: pointer;
+                        background: url(https://res8.vmallres.com/20181205/images/echannel/icon/icon-header.png?20170620) no-repeat;
+                        &:nth-child(1){
+                            background-position: -355px -171px;
+                            &:hover{
+                                background-position: -331px -171px;
+                            }
+                        }
+                        &:nth-child(2){
+                            background-position: -403px -171px;
+                            &:hover{
+                                background-position: -379px -171px;
+                            }
+                        }
+                        &:nth-child(3){
+                            background-position: -451px -171px;
+                            &:hover{
+                                background-position: -427px -171px;
+                            }
+                        }
+                        &:nth-child(4){
+                            background-position: -499px -171px;
+                            &:hover{
+                                background-position: -475px -171px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .footer_three{
+        padding: 22px 0 22px;
+        width: 1200px;
+        margin: 0 auto;
+        color: #666;
+        line-height: 1.5;
+        height: 60px;
+        >article{
+            width: 942px;
+            >h2{
+                width: 82px;
+                height: 20px;
+                margin: 2PX 20px 0 0;
+                background: url(https://res.vmallres.com/pimages//sale/2019-01/wLelYbpMVWbj9Xpaa5Fk.png)no-repeat center / cover;
+                cursor: pointer;
+                float: left;
+            }
+            > div{
+                float: left;
+                width: 840px;
+                height: 60px;
+                > p{
+                    color: #777777;
+                    line-height: 20px;
+                    font-size: 12px;
+                    text-align: left;
+                    span{
+                        cursor: pointer;
+                        @include footer_three_line;
+                        &:hover{
+                            color:#CA141D;
+                        }
+                    }
+                }
+                > ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        padding-right: 3px;
+                        line-height: 20px;
+                        font-size: 12px;
+                        color: #a4a4a4;
+                        cursor: pointer;
+                        &:hover{
+                            color:#CA141D;
+                        }
+                        &:nth-child(4){
+                            cursor: default;
+                            &:hover{
+                                color:#a4a4a4;
+                            }
+                        }
+                        &:nth-child(11){
+                            cursor: default;
+                            &:hover{
+                                color:#a4a4a4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

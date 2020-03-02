@@ -1,0 +1,295 @@
+body,html{
+    width: 100%;
+    background-color: #f5f5f5;
+    font-family: Arial;
+}
+
+header{
+    .header_two{
+        article{
+            .header_two_l{
+                h1{
+                    span{
+                        margin-left: 26px;
+                        font-size: 22px;
+                        line-height: 36px;
+                    }
+                }
+            }
+            .header_two_r{
+                width: 320px;
+                height: 50px;
+                margin: 0 0 2px;
+                background: rgba(0,0,0,0) url(https://res.vmallres.com/20200122/staticpc/img/sprites6.806df78.svg) no-repeat;
+                background-position: -42px -22px;
+            }
+        }
+    }
+}
+
+.sc-empty{
+    width: 1200px;
+    margin: 50px auto;
+    padding-top: 135px;
+    height: 365px;
+    background: #fff;
+    text-align: center;
+    color: #7f7f7f;
+    font-size: 14px;
+    display: none;
+    >span{
+        background: url(https://res.vmallres.com/20200122/staticpc/img/icon-header-minicart.32e5f81.png) no-repeat;
+        display: block;
+        height: 100px;
+        margin: 0 auto 36px;
+        width: 100px;
+    }
+    >p{
+        font-size: 18px;
+        color: #a4a4a4;
+        margin-bottom: 16px;
+    }
+    a{
+        width: 172px;
+        height: 46px;
+        line-height: 46px;
+        font-size: 18px;
+        color: #fff;
+        display: block;
+        margin: 0 auto;
+        background: #ca141d;
+        border-radius: 2px;
+    }
+}
+
+.sc-list{
+    width: 1200px;
+    margin: 50px auto;
+    >.sc-pro-title{
+        height: 40px;
+        font-size: 12px;
+        background: #fff;
+        line-height: 40px;
+        padding-left: 40px;
+        color: #a4a4a4;
+        margin-bottom: 10px;
+        >label{
+            float: left;
+            width: 150px;
+            .vam{
+                margin-right: 10px;
+                cursor: pointer;
+                background: url(https://res.vmallres.com/20200122/staticpc/img/icon-header.c4189e7.png) no-repeat;
+                border: 0;
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background-position: -18px -129px;
+            }
+            .checked{
+                background-position: 0 -129px;
+            }
+        }
+        >ul{
+            float: left;
+            >li{
+                float: left;
+                width: 100px;
+                margin-left: 30px;
+                text-align: center;
+                &:nth-child(1){
+                    width: 450px;
+                    text-align: left;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    >.cart-form{
+        div{
+            background: #fff;
+            padding-left: 40px;
+            margin: 10px 0;
+            padding-top: 20px;
+            >label{
+                float: left;
+                margin: 43px 3px 0 0;
+                .vam{
+                    margin-right: 10px;
+                    cursor: pointer;
+                    background: url(https://res.vmallres.com/20200122/staticpc/img/icon-header.c4189e7.png) no-repeat;
+                    border: 0;
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background-position: -18px -129px;
+                }
+                .checked{
+                    background-position: 0 -129px;
+                }
+            }
+            >.sc-pro-area{
+                float: left;
+                width: 1130px;
+                font-size: 14px;
+                margin-bottom: 18px;
+                >.p-img{
+                    width: 100px;
+                    height: 100px;
+                    float: left;
+                    margin-right: 20px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                >ul{
+                    float: left;
+                    >li{
+                        float: left;
+                        width: 100px;
+                        margin-left: 30px;
+                        text-align: center;
+                        
+                    }
+                    >.p-all{
+                        width: 450px;
+                        text-align: left;
+                        margin-left: 0;
+                        >.p-label{
+                            font-size: 14px;
+                            color: #ca141d;
+                            line-height: 18px;
+                            padding: 0 8px;
+                            margin-right: 8px;
+                            border: 1px solid #ca141d;
+                            margin-top: 6px;
+                            width: 56px;
+                        }
+                        >.p-name{
+                            line-height: 50px;
+                            color: #3a3a3a;
+                        }
+                    }
+                    >.p-price{
+                        width: 140px;
+                        margin-left: 17px;
+                        line-height: 85px;
+                    }
+                    >.p-stock-area{
+                        border: 1px solid #d6d6d6;
+                        width: 86px;
+                        margin: 0 auto;
+                        height: 20px;
+                        border-radius: 2px;
+                        position: relative;
+                        margin-left: 17px;
+                        margin-top: 30px;
+                        .p-stock-text{
+                            width: 42px;
+                            height: 20px;
+                            position: absolute;
+                            top: 0;
+                            left: 22px;
+                            text-align: center;
+                            border: 1px solid #d6d6d6;
+                            border-top: none;
+                            border-bottom: none;
+                            z-index: 1;
+                        }
+                        .p-stock-btn{
+                            width: 86px;
+                            position: absolute;
+                            top: 1px;
+                            left: 1px;
+                            >a{
+                                width: 21px;
+                                height: 20px;
+                                line-height: 19px;
+                                font-size: 16px;
+                                text-align: center;
+                                color: #717171;
+                            }
+                            .desc{
+                                float: left;
+                            }
+                            .insec{
+                                float: right;
+                            }
+                        }
+                    }
+                    >.p-price-total{
+                        color: #ca141d;
+                        font-weight: 700;
+                        line-height: 85px;
+                        span{
+                            font-weight: 700;
+                        }
+                    }
+                    >.p-del{
+                        color: #a4a4a4;
+                        line-height: 85px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    >.sc-total-tool{
+        position: sticky;
+        bottom: 0;
+        background: #fff;
+        height: 60px;
+        margin-top: 10px;
+        >.sc-total-control{
+            float: left;
+            line-height: 60px;
+            >label{
+                float: left;
+                margin-left: 40px;
+                font-size: 12px;
+                color:#3a3a3a;
+                .vam{
+                    margin-right: 10px;
+                    cursor: pointer;
+                    background: url(https://res.vmallres.com/20200122/staticpc/img/icon-header.c4189e7.png) no-repeat;
+                    border: 0;
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background-position: -18px -129px;
+                }
+                .checked{
+                    background-position: 0 -129px;
+                }
+            }
+        }
+        >.sc-total-btn{
+            float: right;
+            width: 180px;
+            height: 60px;
+            line-height: 60px;
+            display: block;
+            background: #ca151e;
+            font-size: 18px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+        >.sc-total-price{
+            float: right;
+            padding-right: 30px;
+            margin-top: 20px;
+            text-align: right;
+            font-size: 14px;
+            span{
+                color: #ca151e;
+                font-size: 18px;
+                font-weight: 700;
+                i{
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}

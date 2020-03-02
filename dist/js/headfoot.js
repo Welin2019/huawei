@@ -1,0 +1,1 @@
+"use strict";$(".header_two_l > ul li").mouseover(function(){$(this).parent().next().slideDown().css("display","block")}),$(".header_two_l").mouseleave(function(){$(this).children("aside").slideUp()}),$(".header_two_l aside").mousemove(function(){$(this).stop()});
