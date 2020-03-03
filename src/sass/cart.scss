@@ -106,7 +106,7 @@ header{
         }
     }
     >.cart-form{
-        div{
+        .wares{
             background: #fff;
             padding-left: 40px;
             margin: 10px 0;
@@ -212,9 +212,13 @@ header{
                             }
                             .desc{
                                 float: left;
+                                cursor: pointer;
+                                user-select: none;
                             }
                             .insec{
-                                float: right;
+                                user-select: none;
+                                float:right;
+                                cursor: pointer;
                             }
                         }
                     }
@@ -238,6 +242,7 @@ header{
     >.sc-total-tool{
         position: sticky;
         bottom: 0;
+        z-index: 9;
         background: #fff;
         height: 60px;
         margin-top: 10px;

@@ -73,9 +73,10 @@ section{
             color: #b40707;
         }
     }
-    .login,.sign{
+    .login{
         width: 328px;
         margin: 0 auto;
+        position: relative;
         li{
             border-bottom: 1px solid #ccc;
             height: 46px;
@@ -110,10 +111,20 @@ section{
                 border-color: #c70000;
             }
         }
+        .signBtn{
+            display: none;
+        }
+        .tip{
+            position: absolute;
+            bottom: 77px;
+            left: 17px;
+            color: #999;
+            font-size: 12px;
+            user-select: none;
+            display: none;
+        }
     }
-    .sign{
-        display: none;
-    }
+    
     aside{
         width: 328px;
         margin: 0 auto;

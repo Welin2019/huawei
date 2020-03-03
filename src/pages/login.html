@@ -20,7 +20,7 @@
     <section>
         <article>
             <span class="loginTitle actived">帐号登录</span>
-            <span class="loginTitle">帐号注册</span>
+            <span class="signTitle">帐号注册</span>
         </article>
         <ul class="login">
             <li >
@@ -29,17 +29,19 @@
             <li>
                 <input type="text" name="password" id="password" placeholder="密码">
             </li>
-            <button>登录</button>
+            <button class="loginBtn">登 录</button>
+            <button class="signBtn">注 册</button>
+            <span class="tip">华为号和密码都要在5-8位以内的任意数或字母的组合 ~</span>
         </ul>
-        <ul class="sign">
+        <!-- <ul class="sign">
             <li >
-                <input type="text" name="username" id="username" placeholder="华为号">
+                <input type="text" name="username" id="username02" placeholder="华为号">
             </li>
             <li>
-                <input type="text" name="password" id="password" placeholder="密码">
+                <input type="text" name="password" id="password02" placeholder="密码">
             </li>
-            <button>注册</button>
-        </ul>
+            <button class="signBtn">注册</button>
+        </ul> -->
         <aside>
             <p><i></i><span>其他方式登录</span><em></em></p>
             <div><span></span><i></i><em></em></div>
@@ -55,6 +57,27 @@
             </p>
         </div>
     </footer>
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
     <script src="../js/utils.js"></script>
+    <script src="../js/login.js"></script>
+    <!-- <script>
+        $.ajax({
+            url:'/login',
+            type:'post',
+            data:{
+                username:`${uname}`,
+                password:`${upass}`
+            },
+            dataType:'json',
+            success:function(){
+                let result = JSON.parse(res);
+                if(result.code===0){
+                    alert('华为号或密码错误')
+                }else{
+                    window.location.href = '../cart.html'
+                }
+            }
+        })
+    </script> -->
 </body>
 </html>

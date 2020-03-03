@@ -166,4 +166,13 @@ class Enlarge {
 
 new Enlarge('.fangda')
 
-
+$('.product-button01').click(function(){
+    let id = location.search.slice(4)*1;
+    let obj = {};
+    obj.id = id
+    obj.images = res.images
+    obj.title = res.title
+    obj.price = res.price
+    obj.num = ($('#shuru').val())*1
+    localStorage.setItem(id, JSON.stringify(obj))
+})

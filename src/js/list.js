@@ -56,6 +56,8 @@ $('.composite').click(function(){
     if($('.aPagers').text() == 2){
         oData(goods,dataHanding(allData)[1]);
     }
+    let inter = document.querySelectorAll('.inter');
+    link(inter);
 })
 //价格
 let nData = [];
@@ -71,6 +73,8 @@ $('.lower').click(function(){
     if($('.aPagers').text() == 2){
         oData(goods,dataHanding(nData)[1]);
     }
+    let inter = document.querySelectorAll('.inter');
+    link(inter);
 })
 //页数
 let oLi = document.querySelectorAll('.goods > ul > li')
@@ -83,6 +87,8 @@ $('.pagers ul .onPager').click(function(){
     if($('.select').text() == '价格'){
         oData(goods,dataHanding(nData)[0]);
     }
+    let inter = document.querySelectorAll('.inter');
+    link(inter);
 })
 $('.pagers ul .toPager').click(function(){
     $('.twoPager').addClass('aPagers').siblings().removeClass('aPagers')
@@ -92,6 +98,8 @@ $('.pagers ul .toPager').click(function(){
     if($('.select').text() == '价格'){
         oData(goods,dataHanding(nData)[1]);
     }
+    let inter = document.querySelectorAll('.inter');
+    link(inter);
 })
 
 let inter = document.querySelectorAll('.inter');
