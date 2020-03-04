@@ -23,23 +23,23 @@ $('.loginBtn').click(function(){
         alert('华为号或密码不能为空')
         return
     }
-    // $.ajax({
-    //     url:'/login',
-    //     type:'post',
-    //     data:{
-    //         username:`${uname}`,
-    //         password:`${upass}`
-    //     },
-    //     dataType:'json',
-    //     success:function(){
-    //         let result = JSON.parse(res);
-    //         if(result.code===0){
-    //             alert('华为号或密码错误')
-    //         }else{
-    //             window.location.href = '../pages/cart.html'
-    //         }
-    //     }
-    // })
+    $.ajax({
+        url:'/login',
+        type:'post',
+        data:{
+            username:`${uname}`,
+            password:`${upass}`
+        },
+        dataType:'json',
+        success:function(){
+            let result = JSON.parse(res);
+            if(result.code===0){
+                alert('华为号或密码错误')
+            }else{
+                window.location.href = './pages/cart.html'
+            }
+        }
+    })
 })
 
 $('.signBtn').click(function(){

@@ -1,7 +1,7 @@
 //获取id
 let parmas = location.search.slice(1);
 let suo = location.search.slice(1).split('=')[1];
-let res = allData.filter(function(item){
+let res = Data.filter(function(item){
     return item.id == suo;
 })[0];
 

@@ -312,33 +312,36 @@ header{
                         > ul{
                             padding: 0 0 0 18px;
                             li{
-                                margin-bottom: 14px;
-                                width: 120px;
-                                height: 206px;
-                                text-align: center;
-                                margin-right: 46px;
-                                font-size: 14px;
-                                float: left;
-                                font-size: 14px;
-                                font-weight: 400;
-                                cursor: pointer;
-                                img{
+                                .alist{
+                                    display: block;
+                                    margin-bottom: 14px;
                                     width: 120px;
-                                    height: 120px;
-                                    margin: 23px auto 0;
-                                }
-                                p{
-                                    height: 42px;
-                                    line-height: 1.4;
-                                    color: #3a3a3a;
-                                    
-                                }
-                                span{
-                                    height: 21px;
-                                    color: #ca141d;
-                                }
-                                &:hover p{
-                                    color: #ca141d;
+                                    height: 206px;
+                                    text-align: center;
+                                    margin-right: 46px;
+                                    font-size: 14px;
+                                    float: left;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    cursor: pointer;
+                                    img{
+                                        width: 120px;
+                                        height: 120px;
+                                        margin: 23px auto 0;
+                                    }
+                                    p{
+                                        height: 42px;
+                                        line-height: 1.4;
+                                        color: #3a3a3a;
+                                        
+                                    }
+                                    span{
+                                        height: 21px;
+                                        color: #ca141d;
+                                    }
+                                    &:hover p{
+                                        color: #ca141d;
+                                    }
                                 }
                             }
                         }

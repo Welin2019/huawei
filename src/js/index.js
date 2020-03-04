@@ -1,16 +1,41 @@
 //头部第二部分的下拉菜单
-$('.header_two_l > ul li').mouseover(
-    function(){
-        $(this).parent().next().slideDown().css('display','block')
-})
+let getList =function(){
+    $.ajax({
+        url: '../lib/index.json',
+        dataType: 'json',
+        success:function(res){
+            let str = ''
+            res.forEach(item => {
+                str += `<li><a href="../pages/list.html"><span>${ item.name }</span></a></li>`
+            })
+            $('.header_two_l > ul')
+            .html(str)
+            .on({
+                mouseenter: () => $('.header_two_l > aside').stop().slideDown(),
+                mouseleave: () => $('.header_two_l > aside').stop().slideUp()
+              }).children('li')
+            .on('mouseover', function (){
+                const index = $(this).index()
+                const list = res[index].list
+                let str = ''
+                list.forEach(item => {
+                    str +=`<li>
+                    <a href="../pages/detail.html?id=${ item.id }" target="_blank" class="alist" idx="${ item.id }"><img src="${ item.images }" alt="">
+                      <p>${ item.title }</p>
+                      <span>¥${ item.price }</span></a>
+                  </li>`
+                })
+                $('.header_two_l > aside > div>ul').html(str)
+            })
+            $('.header_two_l > aside').on({
+                mouseover: function () { $(this).finish().show() },
+              mouseout: function () { $(this).finish().slideUp() }
+            })
+        }
+    })
+}
+getList()
 
-$('.header_two_l').mouseleave(function(){
-    $(this).children('aside').slideUp()
-})
-
-$('.header_two_l aside').mousemove(function(){
-    $(this).stop()
-})
 
 //!banner透明度轮播
 let bannerW = document.querySelector('#bannerW');
