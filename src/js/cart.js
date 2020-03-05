@@ -19,7 +19,7 @@ for (const {id,images,title,price,num} of arr){
     div.classList.add('clear_fix');
     div.classList.add('wares');
     form.appendChild(div);
-    div.innerHTML = `<label class="checkbox"><input class="vam checked"> </label>
+    div.innerHTML = `<label class="checkbox"><input class="vam" type="checkbox" checked name="check" idx ="${id}"> </label>
     <aside class="sc-pro-area">
       <a href="../pages/detail.html?id=${id}" target="_blank" class="p-img"><img src="${images}" alt="${title}"></a>
       <ul>
@@ -44,6 +44,83 @@ for (const {id,images,title,price,num} of arr){
     </aside>`
 }
 
+//input 选项框封装
+$.fn.extend({
+  selectAll:function(type=true){
+      this.each(function(index,item){
+          item.checked=type
+      })
+      return this
+  },
+  selectOthers:function(){
+      this.each(function(index,item){
+          item.checked = !item.checked
+      })
+      return this
+  }
+})
+
+$('.vam01').click(function(){
+  if($(this).prop('checked')){
+    $('.vam').selectAll()
+    $('.vam02').prop('checked',true)
+    $('.sc-total-price').children('span').children('i').text(fun())
+  }else{
+    $('.vam').selectAll(false)
+    $('.vam02').prop('checked',false)
+    $('.sc-total-price').children('span').children('i').text(fun())
+  }
+})
+
+$('.vam02').click(function(){
+  if($(this).prop('checked')){
+    $('.vam').selectAll()
+    $('.vam01').prop('checked',true)
+    $('.sc-total-price').children('span').children('i').text(fun())
+  }else{
+    $('.vam').selectAll(false)
+    $('.vam01').prop('checked',false)
+    $('.sc-total-price').children('span').children('i').text(fun())
+  }
+})
+
+$('.del02').click(function(){
+  let res = confirm('您确认要删除选中的商品吗？')
+  if(res === true){
+    $('.vam').each(function(index,item){
+      if($(item).prop('checked')){
+        $(this).parents('.wares').remove();
+        console.log($(this));
+        
+        let idx = $(this).attr('idx');
+        localStorage.removeItem(idx);
+        $('.sc-total-price').children('span').children('i').text(fun())
+      }
+      if($("input[name='check']:checked").length===localStorage.length){
+        $('.sc-empty').show()
+        $('.sc-list').hide()
+      }
+    })
+  }
+})
+
+$('.vam').each(function(index,item){
+  $(item).click(function(){
+    if(($("input[name='check']:checked").length===localStorage.length)){
+      $('.vam01').prop('checked',true)
+      $('.vam02').prop('checked',true)
+      $('.sc-total-price').children('span').children('i').text(fun())
+    }else{
+      $('.vam01').prop('checked',false)
+      $('.vam02').prop('checked',false)
+      $('.sc-total-price').children('span').children('i').text(fun())
+    }
+    if($(this).prop('checked')){
+      $('.sc-total-price').children('span').children('i').text(fun())
+    };
+    
+  })
+})
 //封装单个总价
 let priceTotal = function(ele,val){
   let price = $(ele).parents('.p-stock-area').prev().children('span')
@@ -53,12 +130,25 @@ let priceTotal = function(ele,val){
   $(ele).parents('.cart-form').next().children('.sc-total-price').children('span').children('i').text(fun())
 }
 
+
+// let fun = function(){
+//   let sum =0;
+//   if($('.vam').prop('checked')){
+//     $('.p-price>span').each(function(){
+//       let value = $(this).parents('.p-price').next().children('.p-stock-text').val()
+//       sum += $(this).text()*value
+//     })
+//   }
+//   return sum
+// }
 //封装所有总价
 let fun = function(){
   let sum =0;
-  $('.p-price>span').each(function(){
-    let value = $(this).parents('.p-price').next().children('.p-stock-text').val()
-    sum += $(this).text()*value
+  $('.vam').each(function(index,item){
+    if($(item).prop('checked')){
+      let value = ($(this).parents('.checkbox').siblings().children('ul').children('.p-price-total').children().text())*1;
+      sum+=value
+    }
   })
   return sum
 }

@@ -76,7 +76,7 @@ header{
         >label{
             float: left;
             width: 150px;
-            .vam{
+            .vam01{
                 margin-right: 10px;
                 cursor: pointer;
                 background: url(https://res.vmallres.com/20200122/staticpc/img/icon-header.c4189e7.png) no-repeat;
@@ -254,7 +254,7 @@ header{
                 margin-left: 40px;
                 font-size: 12px;
                 color:#3a3a3a;
-                .vam{
+                .vam02{
                     margin-right: 10px;
                     cursor: pointer;
                     background: url(https://res.vmallres.com/20200122/staticpc/img/icon-header.c4189e7.png) no-repeat;
@@ -267,6 +267,12 @@ header{
                 .checked{
                     background-position: 0 -129px;
                 }
+            }
+            >span{
+                margin-left: 20px;
+                font-size: 12px;
+                color:#3a3a3a;
+                cursor: pointer;
             }
         }
         >.sc-total-btn{

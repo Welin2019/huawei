@@ -175,4 +175,5 @@ $('.product-button01').click(function(){
     obj.price = res.price
     obj.num = ($('#shuru').val())*1
     localStorage.setItem(id, JSON.stringify(obj))
+    alert('添加购物车成功^_^')
 })

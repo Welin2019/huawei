@@ -128,7 +128,7 @@ const watchHandler = () => {
 module.exports.default = gulp.series(
   delHandler,
   gulp.parallel(sassHandler, jsHandler, htmlHandler, imgHandler, libHandler),
-  serverHandler,
+  // serverHandler,
   watchHandler
 )
 

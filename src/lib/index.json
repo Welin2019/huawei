@@ -44,71 +44,66 @@
       "name": "笔记本电脑",
       "list": [
         {
-          "id": 87,
-          "title": "HUAWEI Mate 30 5G",
-          "price": 4999,
-          "images": "https://res2.vmallres.com/pimages//product/6901443353361/428_428_6381399AD1BADEB91EBD63AF4EAE62016C58317DDEB7C5C4mp.png"
+          "id": 92,
+          "title": "HUAWEI MateBook X Pro",
+          "price": 8999,
+          "images": "https://res1.vmallres.com/pimages//product/6901443297726/428_428_1555752034219mp.png"
         },
         {
-          "id": 88,
-          "title": "HUAWEI nova 6 5G",
-          "price": 3499,
-          "images": "https://res9.vmallres.com/pimages//product/6901443359561/428_428_DBB69C4C46D404887E3183DBF1C14AEF4F968600C87EBFF4mp.png"
+          "id": 93,
+          "title": "HUAWEI MateBook 14",
+          "price": 5999,
+          "images": "https://res1.vmallres.com/pimages//product/6901443292400/428_428_1556004658927mp.png"
         },
         {
-          "id": 89,
-          "title": "HUAWEI P30 Pro",
-          "price": 4488,
-          "images": "https://res8.vmallres.com/pimages//product/6901443293490/428_428_1553080852384mp.png"
+          "id": 94,
+          "title": "HUAWEI MateBook D",
+          "price": 5488,
+          "images": "https://res1.vmallres.com/pimages//product/6901443209422/428_428_1542768394394mp.png"
         },
         {
-          "id": 90,
-          "title": "HUAWEI P30",
-          "price": 3388,
-          "images": "https://res0.vmallres.com/pimages//product/6901443317783/428_428_1561518789796mp.png"
-        },
-        {
-          "id": 91,
-          "title": "HUAWEI nova 5 Pro",
-          "price": 2469,
-          "images": "https://res7.vmallres.com/pimages//product/6901443316168/428_428_1561435068797mp.png"
-        }]
+          "id": 95,
+          "title": "HUAWEI 蓝牙鼠标（灰色）",
+          "price": 179,
+          "images": "https://res4.vmallres.com/pimages//product/6901443303236/428_428_1557135438924mp.png"
+        }
+        ]
     },
     {
       "name": "平板&穿戴",
       "list": [
         {
-          "id": 98,
+          "id": 96,
           "title": "HUAWEI MatePad Pro 10.8英寸",
           "price": 3299,
           "images": "https://res0.vmallres.com/pimages//product/6901443361601/428_428_043BBBF55C69CCDB183C8BA0489A59984DB78229BDDD4E83mp.png"
         },
         {
-          "id": 99,
+          "id": 97,
           "title": "华为平板 M6 10.8英寸",
           "price": 2299,
           "images": "https://res5.vmallres.com/pimages//product/6901443315833/428_428_1560759050466mp.png"
         },
         {
-          "id": 100,
+          "id": 98,
           "title": "华为平板 M6 8.4英寸",
           "price": 1799,
           "images": "https://res9.vmallres.com/pimages//product/6901443319886/428_428_1560822806587mp.png"
         },
         {
-          "id": 101,
+          "id": 99,
           "title": "HUAWEI WATCH GT",
           "price": 1188,
           "images": "https://res9.vmallres.com/pimages//product/6901443287697/428_428_1553502823158mp.png"
         },
         {
-          "id": 102,
+          "id": 100,
           "title": "华为手环 4 Pro",
           "price": 399,
           "images": "https://res4.vmallres.com/pimages//product/6901443360277/428_428_061D8F76265535D8DC96169039A94B869116ABCE24A935EDmp.png"
         },
         {
-          "id": 103,
+          "id": 101,
           "title": "华为儿童手表 3 Pro",
           "price": 798,
           "images": "https://res9.vmallres.com/pimages//product/6901443254330/428_428_1553777154761mp.png"
@@ -119,28 +114,40 @@
       "name": "智能家居",
       "list": [
         {
-          "id": 104,
+          "id": 102,
           "title": "华为智慧屏",
           "price": 6999,
           "images": "https://res2.vmallres.com/pimages//product/6901443331093/428_428_21EEE8FC1E9B970CAA527CC00F668B933528C62FBC4CD1E4mp.png"
         },
         {
-          "id": 105,
+          "id": 103,
           "title": "华为移动路由5G CPE Pro",
           "price": 2499,
           "images": "https://res2.vmallres.com/pimages//product/6901443324965/428_428_1563154544230mp.png"
         },
         {
-          "id": 106,
+          "id": 104,
           "title": "华为子母路由 Q2 Pro",
           "price": 799,
           "images": "https://res1.vmallres.com/pimages//product/6901443273324/428_428_1554109398579mp.png"
         },
         {
+          "id": 105,
+          "title": "华为5G随行WiFi",
+          "price": 1699,
+          "images": "https://res9.vmallres.com/pimages//product/6901443361151/428_428_8DFC81D5EB502121867D203E4DFA6F5D0728F7C57DA6D995mp.png"
+        },
+        {
+          "id": 106,
+          "title": "华为智能体脂秤 2 Pro",
+          "price": 499,
+          "images": "https://res4.vmallres.com/pimages//product/6901443347032/428_428_1A809F8C924A2812E378A60181704C516B8C09C9F03EFD19mp.png"
+        },
+        {
           "id": 107,
-          "title": "华为路由A2",
-          "price": 399,
-          "images": "https://res7.vmallres.com/pimages//product/6972453160010/428_428_AE7ED32286D477FDC679E510BE5DAE46F0AD800E7D44D7B1mp.png"
+          "title": "720全效空气净化器",
+          "price": 1299,
+          "images": "https://res1.vmallres.com/pimages//product/GB3102150050701/428_428_1540988079208mp.png"
         }
       ]
     },
@@ -148,36 +155,47 @@
       "name": "配件",
       "list": [
         {
-          "id": 110,
+          "id": 108,
           "title": "HUAWEI FreeBuds 3 无线耳机",
           "price": 1199,
           "images": "https://res9.vmallres.com/pimages//product/6901443344697/428_428_C72517A4938F09A0E087E77DAE4A882A2A80674FAAC94C20mp.png"
         },
         {
-          "id": 111,
+          "id": 109,
           "title": "华为AI音箱",
           "price": 399,
           "images": "https://res1.vmallres.com/pimages//product/6901443266425/428_428_1545040924753mp.png"
         },
         {
-          "id": 112,
+          "id": 110,
           "title": "HUAWEI FreeLace 无线耳机",
           "price": 499,
           "images": "https://res7.vmallres.com/pimages//product/6901443317301/428_428_1563239675439mp.png"
         },
         {
-          "id": 113,
+          "id": 111,
           "title": "华为40W超级快充移动电源",
           "price": 369,
           "images": "https://res7.vmallres.com/pimages//product/6901443281398/428_428_1553601190793mp.png"
         },
         {
-          "id": 114,
+          "id": 112,
           "title": "HUAWEI P30 透明保护壳",
           "price": 199,
           "images": "https://res7.vmallres.com/pimages//product/6901443291601/428_428_1553655759357mp.png"
+        },
+        {
+          "id": 113,
+          "title": "华为车载充电器",
+          "price": 159,
+          "images": "https://res7.vmallres.com/pimages//product/6901443155439/428_428_1543030211833mp.png"
+        },
+        {
+          "id": 114,
+          "title": "华为自拍杆",
+          "price": 49,
+          "images": "https://res7.vmallres.com/pimages//product/6901443115983/428_428_1554204570958mp.png"
         }
-        
       ]
     }
   ]
