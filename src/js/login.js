@@ -50,30 +50,30 @@ $('.signBtn').click(function(){
         return
     }
     let reg = /^[0-9a-zA-Z]{5,8}$/;
-    console.log(reg.test(uname));
-    console.log(reg.test(upass));
+    // console.log(reg.test(uname));
+    // console.log(reg.test(upass));
     
     if(!reg.test(uname) || !reg.test(upass)){
         alert('华为号和密码都要在5-8位以内的任意数或字母的组合~')
         return
     }
 
-    // $.ajax({
-    //     url:'/sign',
-    //     type:'post',
-    //     data:{
-    //         username:`${uname}`,
-    //         password:`${upass}`
-    //     },
-    //     dataType:'json',
-    //     success:function(){
-    //         let result = JSON.parse(res);
-    //         if(result.code===0){
-    //             alert('华为号或密码错误')
-    //         }else{
-    //             alert('欢迎回到华为！')
-    //             window.location.href = '../pages/cart.html'
-    //         }
-    //     }
-    // })
+    $.ajax({
+        url:'/sign',
+        type:'post',
+        data:{
+            username:`${uname}`,
+            password:`${upass}`
+        },
+        dataType:'json',
+        success:function(){
+            let result = JSON.parse(res);
+            if(result.code===0){
+                alert('华为号或密码错误')
+            }else{
+                alert('欢迎回到华为！')
+                window.location.href = '../pages/cart.html'
+            }
+        }
+    })
 })
